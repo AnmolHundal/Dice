@@ -1,0 +1,74 @@
+roll_again = "yes"
+
+while roll_again == "yes":
+    import random
+    x = random.randint(1,6)
+    y = random.randint(1,6)
+    question = input("Would you like to roll the dice?(yes/no): ")
+    total = x + y
+    if question == "yes":
+        if x == 1:
+            print( "|     |")
+            print( "|  O  |")
+            print( "|     |")
+            print( "Dice A rolled 1")
+        elif x == 2:
+            print( "| O   |")
+            print( "|     |")
+            print( "|   O |")
+            print ("Dice A rolled 2")
+        elif x == 3:
+            print ("| O   |")
+            print( "|  O  |")
+            print ("|   O |")
+            print ("Dice A rolled 3")
+        elif x == 4:
+            print ("| O O |")
+            print ("|     |")
+            print ("| O O |")
+            print ("Dice A rolled 4")
+        elif x == 5:
+            print ("| O O |")
+            print ("|  O  |")
+            print ("| O O |")
+            print ("Dice A rolled 5")
+        elif x == 6:
+            print ("| O O |")
+            print ("| O O |")
+            print ("| O O |")
+            print ("Dice A rolled 6")
+        if y == 1:
+            print ("|     |")
+            print ("|  O  |")
+            print ("|     |")
+            print ("Dice B rolled 1")
+        elif y == 2:
+            print ("| O   |")
+            print ("|     |")
+            print ("|   O |")
+            print ("Dice B rolled 2")
+        elif y == 3:
+            print ("| O   |")
+            print ("|  O  |")
+            print ("|   O |")
+            print ("Dice B rolled 3")
+        elif y == 4:
+            print ("| O O |")
+            print ("|     |")
+            print ("| O O |")
+            print ("Dice B rolled 4")
+        elif y == 5:
+            print ("| O O |")
+            print ("|  O  |")
+            print ("| O O |")
+            print ("Dice B rolled 5")
+        elif y == 6:
+           print ("| O O |")
+           print ("| O O |")
+           print ("| O O |")
+           print ("Dice B rolled 6")
+        print (total)
+        print ("----------------------------")
+    else:
+        print ("OK. Restart program when you want to roll again.")
+        break
